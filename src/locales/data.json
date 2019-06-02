@@ -1,0 +1,10 @@
+{
+  "de": {
+    "nav.chatTabLabel": "Chat",
+    "nav.settingsTabLabel": "Einstellungen"
+  },
+  "en": {
+    "nav.chatTabLabel": "Chat",
+    "nav.settingsTabLabel": "Settings"
+  }
+}
