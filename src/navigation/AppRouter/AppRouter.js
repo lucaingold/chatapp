@@ -13,7 +13,7 @@ export const AppRouter = () => {
       <React.Fragment>
         <BlockedNavigation />
         <Switch>
-          <Route exact={true} path='/' component={ChatPage} />
+          <Route exact={true} path='/' component={SettingsPage} />
           <Route path='/chat' component={ChatPage} />
           <Route path='/settings' component={SettingsPage} />
         </Switch>
