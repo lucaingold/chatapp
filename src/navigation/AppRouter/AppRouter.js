@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { HashRouter, Route, Switch, withRouter } from 'react-router-dom';
-import Navigation from '../Navigation';
+import Navigation from '../Navigation/Navigation';
 import ChatPage from '../../pages/Chat/ChatPage';
 import SettingsPage from '../../pages/Settings/SettingsPage';
 

@@ -13,7 +13,7 @@ export class UserSettings extends React.Component {
     username: PropTypes.string
   };
   state = {
-    username: readRecord("username") || "guest0001"
+    username: readRecord("username") || "icognito"
   };
 
   constructor(props) {

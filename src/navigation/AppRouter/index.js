@@ -1,3 +1,3 @@
-import ChatPage from './ChatPage';
+import { AppRouter } from './AppRouter';
 
-export default ChatPage;
+export default AppRouter;

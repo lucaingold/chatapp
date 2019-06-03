@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 import UnreadMessagesCounter from "../../components/UnreadMessageCounter";
 import { isPageActive } from "../../utils/common";
 import { Sticky, Menu, Image, Icon } from "semantic-ui-react";
-import { FormattedMessage } from "react-intl";
 
 export class Navigation extends React.Component {
   static propTypes = {
@@ -71,16 +70,13 @@ export class Navigation extends React.Component {
             to="/chat"
           >
             <Icon name="chat" />
-            {/* <FormattedMessage id="nav.chatTabLabel" /> */}
             <span>Chat</span>
-
             <UnreadMessagesCounter count={unreadMessages} />
           </Menu.Item>
 
           <Menu.Item as={NavLink} activeClassName="active" to="/settings">
             <Icon name="settings" />
             <span>Einstellungen</span>
-            {/* <FormattedMessage id="nav.settingsTabLabel" /> */}
           </Menu.Item>
 
           <Menu.Item position="right">

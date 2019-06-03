@@ -18,10 +18,16 @@ export class MessageSender extends React.Component {
   };
 
   state = {
-    username: readRecord("username") || "guest0001",
+    username: readRecord("username") || "icognito",
     chatMessage: ""
   };
 
+  constructor(props){
+    super(props);
+    this.setState({
+      username: this.props.username 
+    });
+  }
   messagesInputRef = React.createRef();
   pressedKeysMap = {};
 
@@ -85,7 +91,6 @@ export class MessageSender extends React.Component {
     const { chatMessage } = this.state;
 
     return (
-
       <StyledMessageSender>
         <input
           id="send-message-input"
@@ -101,14 +106,17 @@ export class MessageSender extends React.Component {
     );
   }
 }
-
-
+const mapStateToProps = state => {
+  return {
+    username: state.messageState.username
+  };
+};
 
 const mapDispatchToProps = dispatch => ({
   sendMessage: message => dispatch(sendMessage(message))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(MessageSender);

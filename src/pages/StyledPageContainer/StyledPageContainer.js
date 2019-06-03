@@ -1,6 +1,4 @@
-// import styled from '../../theme';
 import styled from 'styled-components';
-
 
 const StyledPageContainer = styled("section")`
   text-align: center;
